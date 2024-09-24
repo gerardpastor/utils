@@ -1,0 +1,19 @@
+# Dependency directory
+node_modules
+bower_components
+
+#dist
+dist
+playground
+
+# Ignore test-related files
+/coverage.data
+/coverage/
+
+# Editors
+.idea
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
