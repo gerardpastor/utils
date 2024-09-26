@@ -1,6 +1,6 @@
 /**
  * Calculates the squared distance between two points.
- * 
+ *
  * This function can be called with either two point objects or four individual coordinates.
  *
  * @param {Object} p1 - The first point object with `x` and `y` properties.
@@ -13,9 +13,9 @@
  * @param {number} y2 - The y-coordinate of the second point.
  * @returns {number} The squared distance between the two points.
  */
-function getDistanceSquaredBetweenPoints(p1: { x: number; y: number }, p2: { x: number; y: number }): number;
-function getDistanceSquaredBetweenPoints(x1: number, y1: number, x2: number, y2: number): number;
-function getDistanceSquaredBetweenPoints(
+export function getDistanceSquaredBetweenPoints(p1: { x: number; y: number }, p2: { x: number; y: number }): number;
+export function getDistanceSquaredBetweenPoints(x1: number, y1: number, x2: number, y2: number): number;
+export function getDistanceSquaredBetweenPoints(
   ...args: [{ x: number; y: number }, { x: number; y: number }] | [number, number, number, number]
 ): number {
   const [x1, y1, x2, y2] = args.length === 2 ? [args[0].x, args[0].y, args[1].x, args[1].y] : args;
@@ -25,5 +25,3 @@ function getDistanceSquaredBetweenPoints(
 
   return dx * dx + dy * dy;
 }
-
-export default getDistanceSquaredBetweenPoints;

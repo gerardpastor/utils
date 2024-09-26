@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import createArray from "./createArray";
+import { createArray } from "./createArray";
 
 describe("createArray", () => {
   it.concurrent("should create an array of length 5 filled with the index of each element", ({ expect }) => {

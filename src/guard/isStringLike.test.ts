@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import isStringLike from "./isStringLike";
+import { isStringLike } from "./isStringLike";
 
 describe("isStringLike", () => {
   it.concurrent("should return true for a string", ({ expect }) => {

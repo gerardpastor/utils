@@ -14,6 +14,6 @@
  * // Checks if 0 is within the range 1 to 10
  * inRange(0, 1, 10); // returns false
  */
-export default function inRange(value: number, min: number, max: number): boolean {
+export function inRange(value: number, min: number, max: number): boolean {
   return value >= min && value <= max;
 }

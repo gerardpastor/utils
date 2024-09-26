@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import getDistanceSquaredBetweenPoints from "./getDistanceSquaredBetweenPoints";
+import { getDistanceSquaredBetweenPoints } from "./getDistanceSquaredBetweenPoints";
 
 describe("getDistanceSquaredBetweenPoints", () => {
   it.concurrent("should calculate the squared distance between two point objects", ({ expect }) => {

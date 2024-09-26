@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import clamp from "./clamp";
+import { clamp } from "./clamp";
 
 describe("clamp", () => {
   it.concurrent("should clamp a value within the default range 0 to 1", ({ expect }) => {

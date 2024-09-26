@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import getAngleBetweenPoints from "./getAngleBetweenPoints";
+import { getAngleBetweenPoints } from "./getAngleBetweenPoints";
 
 describe("getAngleBetweenPoints", () => {
   it.concurrent("should calculate the angle between two point objects", ({ expect }) => {
@@ -32,7 +32,7 @@ describe("getAngleBetweenPoints", () => {
     const p1 = { x: -1, y: -1 };
     const p2 = { x: -2, y: -2 };
     const angle = getAngleBetweenPoints(p1, p2);
-    expect(angle).toBeCloseTo(-3 * Math.PI / 4);
+    expect(angle).toBeCloseTo((-3 * Math.PI) / 4);
   });
 
   it.concurrent("should handle mixed positive and negative coordinates", ({ expect }) => {

@@ -1,5 +1,5 @@
 import { describe, it, vi } from "vitest";
-import wait from "./wait";
+import { wait } from "./wait";
 
 // describe("wait", () => {
 //   it.concurrent("should wait for the specified time", async ({ expect }) => {

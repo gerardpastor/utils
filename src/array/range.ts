@@ -18,9 +18,9 @@
  * // Generates an array from 5 to 1 with a step of 1
  * range(5, 1, 1); // returns [5, 4, 3, 2, 1]
  */
-function range(end: number): number[];
-function range(start: number, end: number, step?: number): number[];
-function range(...args: [number, number?, number?]): number[] {
+export function range(end: number): number[];
+export function range(start: number, end: number, step?: number): number[];
+export function range(...args: [number, number?, number?]): number[] {
   const [start, end, step = 1] = args.length === 1 ? [0, args[0], 1] : (args as [number, number, number?]);
 
   if (step === 0) {
@@ -42,5 +42,3 @@ function range(...args: [number, number?, number?]): number[] {
 
   return result;
 }
-
-export default range;

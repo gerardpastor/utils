@@ -19,7 +19,7 @@
  * // Cycles through the array ['a', 'b', 'c'] and returns the value at index -1
  * cycle(['a', 'b', 'c'], -1); // returns 'c'
  */
-export default function cycle<T>(values: T[], index: number): T {
+export function cycle<T>(values: T[], index: number): T {
   if (values.length === 0) {
     throw new Error("Values array cannot be empty");
   }

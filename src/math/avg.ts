@@ -19,7 +19,7 @@
  * // Returns 0 for an empty array with emptyArrayValue set to 0
  * avg([], 0); // returns 0
  */
-export default function avg(numbers: number[], emptyArrayValue?: number): number {
+export function avg(numbers: number[], emptyArrayValue?: number): number {
   if (numbers.length === 0) {
     if (emptyArrayValue !== undefined) {
       return emptyArrayValue;

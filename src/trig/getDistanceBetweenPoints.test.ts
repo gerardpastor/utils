@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import getDistanceBetweenPoints from "./getDistanceBetweenPoints";
+import { getDistanceBetweenPoints } from "./getDistanceBetweenPoints";
 
 describe("getDistanceBetweenPoints", () => {
   it.concurrent("should calculate the distance between two point objects", ({ expect }) => {

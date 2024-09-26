@@ -18,7 +18,7 @@
  * // Calculates the interpolation factor for value -5 within the range -10 to 0
  * inverseLerp(-10, 0, -5); // returns 0.5
  */
-export default function inverseLerp(start: number, end: number, value: number): number {
+export function inverseLerp(start: number, end: number, value: number): number {
   if (start === end) {
     return 0; // Avoid division by zero
   }

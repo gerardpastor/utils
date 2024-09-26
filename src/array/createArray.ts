@@ -13,11 +13,9 @@
  * // Creates an array of length 5 filled with the result of the callback function
  * arrayFrom(5, () => Math.random()); // returns [0.123, 0.456, 0.789, 0.012, 0.345]
  */
-function createArray<T = number>(length: number, mapfn?: (v: unknown, k: number) => T): T[] {
+export function createArray<T = number>(length: number, mapfn?: (v: unknown, k: number) => T): T[] {
   return Array.from({ length }, mapfn ?? ((_, i) => i as T));
 }
-
-export default createArray;
 
 // const arrayFromDefault = arrayFrom(5); // returns [0, 1, 2, 3, 4]
 // const arrayFromNumbers = arrayFrom(5, () => Math.random()); // returns [0.123, 0.456, 0.789, 0.012, 0.345]

@@ -8,6 +8,6 @@
  * // Waits for 1 second
  * await wait(1000);
  */
-export default function wait(ms: number): Promise<void> {
+export function wait(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }

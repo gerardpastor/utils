@@ -1,4 +1,4 @@
-import getDistanceSquaredBetweenPoints from "./getDistanceSquaredBetweenPoints";
+import { getDistanceSquaredBetweenPoints } from "./getDistanceSquaredBetweenPoints";
 
 /**
  * Calculates the distance between two points.
@@ -15,13 +15,11 @@ import getDistanceSquaredBetweenPoints from "./getDistanceSquaredBetweenPoints";
  * @param {number} y2 - The y-coordinate of the second point.
  * @returns {number} The distance between the two points.
  */
-function getDistanceBetweenPoints(p1: { x: number; y: number }, p2: { x: number; y: number }): number;
-function getDistanceBetweenPoints(x1: number, y1: number, x2: number, y2: number): number;
-function getDistanceBetweenPoints(
+export function getDistanceBetweenPoints(p1: { x: number; y: number }, p2: { x: number; y: number }): number;
+export function getDistanceBetweenPoints(x1: number, y1: number, x2: number, y2: number): number;
+export function getDistanceBetweenPoints(
   ...args: [{ x: number; y: number }, { x: number; y: number }] | [number, number, number, number]
 ): number {
   const [x1, y1, x2, y2] = args.length === 2 ? [args[0].x, args[0].y, args[1].x, args[1].y] : args;
   return Math.sqrt(getDistanceSquaredBetweenPoints(x1, y1, x2, y2));
 }
-
-export default getDistanceBetweenPoints;

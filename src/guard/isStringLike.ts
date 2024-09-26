@@ -26,8 +26,6 @@ import { StringLike } from "./types";
  * // Returns false for an array
  * isStringLike([]); // false
  */
-function isStringLike(value: unknown): value is StringLike {
+export function isStringLike(value: unknown): value is StringLike {
   return typeof value === "string" || typeof value === "number" || typeof value === "boolean";
 }
-
-export default isStringLike;

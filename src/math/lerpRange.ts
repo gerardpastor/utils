@@ -1,4 +1,4 @@
-import lerp from "./lerp";
+import { lerp } from "./lerp";
 
 /**
  * Linearly interpolates between two values over a specified range.
@@ -10,6 +10,6 @@ import lerp from "./lerp";
  * @param {number} [tMax=1] - The maximum value of the interpolation factor range. Default is 1.
  * @returns {number} The interpolated value.
  */
-export default function lerpRange(start: number, end: number, t: number, tMin: number = 0, tMax: number = 1): number {
+export function lerpRange(start: number, end: number, t: number, tMin: number = 0, tMax: number = 1): number {
   return lerp(start, end, (t - tMin) / (tMax - tMin));
 }

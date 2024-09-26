@@ -1,5 +1,5 @@
-import { describe, it } from 'vitest';
-import inverseLerp from './inverseLerp';
+import { describe, it } from "vitest";
+import { inverseLerp } from "./inverseLerp";
 
 describe("inverseLerp", () => {
   it.concurrent("should calculate the interpolation factor correctly within a range", ({ expect }) => {

@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import range from "./range";
+import { range } from "./range";
 
 describe("range", () => {
   it.concurrent("should generate an array from 1 to 5", ({ expect }) => {

@@ -16,6 +16,6 @@
  * // Returns false for undefined
  * notNullable(undefined); // false
  */
-export default function notNullable<T>(value: T | null | undefined): value is T {
+export function notNullable<T>(value: T | null | undefined): value is T {
   return value !== null && value !== undefined;
 }

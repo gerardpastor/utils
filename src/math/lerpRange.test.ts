@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import lerpRange from "./lerpRange";
+import { lerpRange } from "./lerpRange";
 
 describe("lerpRange", () => {
   it.concurrent("should interpolate between two values correctly", ({ expect }) => {

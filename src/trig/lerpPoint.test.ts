@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import lerpPoint from "./lerpPoint";
+import { lerpPoint } from "./lerpPoint";
 import { Point } from "./types";
 
 describe("lerpPoint", () => {

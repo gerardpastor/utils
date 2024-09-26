@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import notNullable from "./notNullable";
+import {notNullable} from "./notNullable";
 
 describe("notNullable", () => {
   it.concurrent("should return true for a non-null string", ({ expect }) => {

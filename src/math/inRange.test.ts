@@ -1,5 +1,5 @@
 import { describe, it } from "vitest";
-import inRange from "./inRange";
+import { inRange } from "./inRange";
 
 describe("inRange", () => {
   it.concurrent("should return true if the number is within the range", ({ expect }) => {

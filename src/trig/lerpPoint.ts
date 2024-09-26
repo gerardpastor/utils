@@ -8,7 +8,7 @@ import { Point } from "./types";
  * @param {number} t - The interpolation factor, typically between 0 and 1.
  * @returns {Object} The interpolated point object with `x` and `y` properties.
  */
-export default function lerpPoint(p1: Point, p2: Point, t: number): Point {
+export function lerpPoint(p1: Point, p2: Point, t: number): Point {
   return {
     x: p1.x * (1 - t) + p2.x * t,
     y: p1.y * (1 - t) + p2.y * t,

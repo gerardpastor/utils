@@ -30,9 +30,7 @@
  * // Clamps 15 within the range 1 to 10
  * clamp(15, 1, 10); // returns 10
  */
-function clamp(value: number, min: number = 0, max: number = 1): number {
+export function clamp(value: number, min: number = 0, max: number = 1): number {
   if (min > max) [min, max] = [max, min];
   return Math.min(Math.max(value, min), max);
 }
-
-export default clamp;

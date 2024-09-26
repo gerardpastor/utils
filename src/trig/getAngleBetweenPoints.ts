@@ -13,13 +13,11 @@
  * @param {number} y2 - The y-coordinate of the second point.
  * @returns {number} The angle in radians between the two points.
  */
-function getAngleBetweenPoints(p1: { x: number; y: number }, p2: { x: number; y: number }): number;
-function getAngleBetweenPoints(x1: number, y1: number, x2: number, y2: number): number;
-function getAngleBetweenPoints(
+export function getAngleBetweenPoints(p1: { x: number; y: number }, p2: { x: number; y: number }): number;
+export function getAngleBetweenPoints(x1: number, y1: number, x2: number, y2: number): number;
+export function getAngleBetweenPoints(
   ...args: [{ x: number; y: number }, { x: number; y: number }] | [number, number, number, number]
 ): number {
   const [x1, y1, x2, y2] = args.length === 2 ? [args[0].x, args[0].y, args[1].x, args[1].y] : args;
   return Math.atan2(y2 - y1, x2 - x1);
 }
-
-export default getAngleBetweenPoints;
