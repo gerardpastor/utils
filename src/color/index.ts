@@ -1,6 +1,8 @@
 export * from "./types";
 export * from "./constants";
 
+export * from "./clampHSL";
+export * from "./clampRGB";
 export * from "./cleanHex";
 export * from "./hexToHSL";
 export * from "./hexToRGB";
