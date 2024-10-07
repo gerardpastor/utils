@@ -40,7 +40,7 @@ export function hexToRGB(hex: ColorHex): ColorRGB {
   const g = (bigint >> 8) & 255;
   const b = bigint & 255;
 
-  const a = hex.length === 8 ? parseInt(hex.slice(6, 8), 16) / 255 : 1;
+  const a = hex.length === 8 ? parseInt(hex.slice(6, 8), 16) / 256 : 1;
 
   return { r, g, b, a };
 }
