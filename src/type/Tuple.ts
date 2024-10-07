@@ -20,8 +20,9 @@
  * // Creates a tuple of length 2 with number or string type elements
  * type NumberStringTuple = Tuple<2, number | string>; // readonly [number | string, number | string]
  */
-type Tuple<Length extends number, Type, Acc extends Type[] = []> = Length extends Acc["length"]
+export type Tuple<Length extends number, Type, Acc extends Type[] = []> = Length extends Acc["length"]
   ? Readonly<Acc>
   : Tuple<Length, Type, [Type, ...Acc]>;
+  
 
 export default Tuple;
